@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Instagram Follower Checker</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="button-container">
+        <a href="/" class="top-btn-link">Check<br>Unfollowers</a>
+        <a href="/dont-follow-back" class="top-btn-link">Check<br>Followers/Following</a>
+    </div>
+    </div>
+    <div class="container">
+        <h1>Instagram Follower Checker</h1>
+
+        <div class="input-container">
+            <input id="username" placeholder="Enter username" />
+        </div>
+
+        <div id="button-container">
+            <button onclick="run('1')" class="action-btn">Check<br>Recent Followers</button>
+            <button onclick="run('2')" class="action-btn">Check<br>Recent Following</button>
+        </div>
+
+        <div id="loader" style="display: none; text-align:center; margin: 20px;">
+            <img src="https://media.tenor.com/Es_0nGDn7s8AAAAi/loading.gif" alt="Loading"
+                style="width:50px; vertical-align:middle;">
+            <p id="loader-text">Loading Profile...</p>
+        </div>
+
+        <div id="stats-box" class="stats-box" style="display: none;">
+            <h3 id="stats-username"></h3>
+            <div id="followers-count">Followers: 0</div>
+            <div id="following-count">Following: 0</div>
+        </div>
+
+        <div id="output"></div>
+
+        </div>
+</body>
+<script src="/static/script.js"></script>
+</html>

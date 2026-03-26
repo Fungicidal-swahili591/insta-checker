@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    font-family: "Avenir", -apple-system, sans-serif;
+    font-weight: normal;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+p {
+    padding: 10px;
+}
+
+h1 {
+    font-family: "Avenir";
+    font-weight: bold;
+}
+
+img {
+    margin-top: 15px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    background: #333;
+    position: relative;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 3px;
+    background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.button-container {
+    display: flex;
+    width: 100%;
+    gap: 5px;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    padding: 0 5px;
+}
+
+.top-btn-link {
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    height: 40px;
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, filter 0.2s;
+    border: none;
+    margin: 10px 0;
+    background: #222;
+}
+
+.top-btn-link:hover {
+    background: #333;
+}
+
+.input-container {
+    width: 100%;
+    padding: 15px;
+}
+
+.input-container input {
+    width: 100%;
+    height: 35px;
+    padding: 0 10px;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 15px;
+    border: 2px solid transparent;
+    background:
+        linear-gradient(#555, #555) padding-box,
+        linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4) border-box fixed;
+    background-size: 200% 200%;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.action-btn {
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-size: 12px;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, filter 0.2s;
+    border: none;
+    margin-bottom: 10px;
+    background: #222;
+    padding: 0 15px;
+    flex: 1 1 auto;
+}
+
+#load-more {
+    display: flex;
+    margin: 10px auto;
+    width: 70%;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-size: 12px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, filter 0.2s;
+    border: 2px solid #dd2a7b;
+    background: #333;
+}
+
+.stats-box {
+    background-color: #222;
+    width: 80%;
+    margin-top: 10px;
+    padding-bottom: 14px;
+    border-radius: 6px;
+}
+
+.follower {
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: expanded;
+    height: 35px;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s, filter 0.2s;
+    border: 2px solid transparent;
+    margin: 10px 0;
+    background:
+        linear-gradient(#333, #333) padding-box,
+        linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #513bd4) border-box fixed;
+    background-size: 200% 200%;
+    opacity: 0;
+    animation: fadeInUp 0.4s ease forwards;
+}
+
+.follower:nth-child(even) {
+    background:
+        linear-gradient(#444, #444) padding-box,
+        linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #513bd4) border-box fixed;
+    background-size: 200% 200%;
+}
+
+.follower button {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    font-weight: bold;
+    font-stretch: expanded;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.follower:nth-child(1) { animation-delay: 0.05s, 0s; }
+.follower:nth-child(2) { animation-delay: 0.1s, 0s; }
+.follower:nth-child(3) { animation-delay: 0.15s, 0s; }
+.follower:nth-child(4) { animation-delay: 0.2s, 0s; }
+.follower:nth-child(5) { animation-delay: 0.25s, 0s; }
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes moveGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@media (max-width: 600px) {
+    body { padding: 8px; }
+    .container { width: 100%; max-width: 100%; }
+    #button-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; width: 100%; }
+    .action-btn { padding: 0 15px; width: auto; flex: 1 1 auto; }
+    .follower { width: 100%; }
+    #load-more { width: 100%; }
+}
